@@ -981,7 +981,11 @@
 			<div class="row block-9">
 				<div class="col-md-8">
 					<form class="bg-light p-4 p-md-5 contact-form" action="https://formsubmit.co/bd8e7254bc9edbf67e1dc5696dfd3d73" method="POST">
-						
+						<!-- honeypot -->
+						<input type="text" name="_honey" style="display:none;">
+                
+						<!-- Disable captcha -->
+						<input type="hidden" name="_captcha" value="false">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -1005,31 +1009,13 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary py-3 px-5" onclick="openPopup()">Send Message</button>
+									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
 								</div>
-							</div>
-							<div id="popup" class="popup">
-								<img src="./images/check2.png">
-								<h2>Thank you!</h2>
-								<p>Your details has been successfully submitted</p>
-								<button type="button" onclick="closePopup()">OK</button>
 							</div>
 						</div>
 					</form>
 					
 				</div>
-				<script>
-					let popup = document.getElementById("popup");
-
-					function openPopup(){
-						popup.classList.add(".open-popup");
-					}
-
-					function openPopup(){
-						popup.classList.remove(".open-popup");
-					}
-				</script>
-
 				<div class="col-md-4 d-flex pl-md-5">
 					<div class="row">
 						<div class="dbox w-100 d-flex">
