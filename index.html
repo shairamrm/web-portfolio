@@ -1010,13 +1010,30 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+									<button type="submit" type="submit" class="btn btn-primary py-3 px-5" onclick="openPopup()">Send Message</button>
 								</div>
+							</div>
+							<div id="popup" class="popup">
+								<img src="./images/check2.png">
+								<h2>Thank you!</h2>
+								<p>Your details has been successfully submitted</p>
+								<button type="button" onclick="closePopup()">OK</button>
 							</div>
 						</div>
 					</form>
 					
 				</div>
+				<script>
+					let popup = document.getElementById("popup");
+
+					function openPopup(){
+						popup.classList.add(".open-popup");
+					}
+
+					function openPopup(){
+						popup.classList.remove(".open-popup");
+					}
+				</script>
 
 				<div class="col-md-4 d-flex pl-md-5">
 					<div class="row">
